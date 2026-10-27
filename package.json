@@ -1,0 +1,24 @@
+{
+  "name": "redact-error-boundary-rethrow",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:react": "vite",
+    "dev:redact": "REDACT=1 vite",
+    "build:react": "vite build --outDir dist-react",
+    "build:redact": "REDACT=1 vite build --outDir dist-redact"
+  },
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@tanstack/redact": "0.2.1",
+    "@types/node": "24.12.0",
+    "@types/react": "19.1.17",
+    "@types/react-dom": "19.1.11",
+    "@vitejs/plugin-react": "6.0.1",
+    "typescript": "5.9.3",
+    "vite": "8.1.5"
+  }
+}
